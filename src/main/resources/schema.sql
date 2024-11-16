@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS table_client(
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    reference VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone_number VARCHAR(255) NOT NULL,
+    adress VARCHAR(255) NOT NULL,
+    is_active BIT DEFAULT TRUE NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at DATETIME NOT NULL
+)
